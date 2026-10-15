@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Halaman Pertamaku</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Nabil Ahmad Furqon</title>
 </head>
 <body>
-  <h1>Halo, saya calon Full-Stack Developer!</h1>
-  <p>Ini adalah halaman web pertama yang saya buat dari nol.</p>
-  <p>Nama saya: Nabil Ahmad Furqon</p>
-  <p>Saya Mau jadi fullstack untuk bekerja di bidang full stack</p>
-  <h2>Target Saya</h2>
+    <header>
+        <h1>Nabil Ahmad Furqon</h1>
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <img src="foto.jpg" alt="Foto Nabil Ahmad Furqon" width="200">
+            <p>Saya calon Full-Stack Developer, dan ini halaman web pertama yang saya buat dari nol.</p>
+        </section>
+
+        <section id="skill">
+            <h2>Skill yang Saya Pelajari</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP & Laravel</li>
+                <li>PostgreSQL</li>
+            </ul>
+        </section>
+
+        <section id="target">
+            <h2>Target Saya</h2>
+            <p>Target saya adalah menguasai full-stack development dalam 6 bulan:</p>
+            <ol>
+                <li>Menguasai frontend: HTML, CSS, JavaScript, React</li>
+                <li>Menguasai backend: PHP & Laravel</li>
+                <li>Menguasai API & database PostgreSQL</li>
+            </ol>
+        </section>
+
+        <section id="kontak">
+            <h2>Hubungi Saya</h2>
+            <p><a href="https://github.com/nabilahmadfurqon" target="_blank">GitHub Saya</a></p>
+            <form>
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Tulis namamu" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="4"></textarea><br><br>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Nabil Ahmad Furqon — Dibuat sambil belajar full-stack</p>
+    </footer>
 </body>
 </html>
