@@ -1,46 +1,122 @@
+/* ====== RESET & DASAR ====== */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: arial;
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: #f1f5f9;
     color: #1e293b;
     line-height: 1.6;
 }
+
+/* ====== HEADER & NAVIGASI ====== */
+header {
+    padding: 32px 20px;
+}
+
 h1 {
     color: #1d4ed8;
     text-align: center;
 }
+
 nav ul {
-  display: flex;          
-  justify-content: center;
-  align-items: center;
-  gap: 24px;              
-  list-style: none;      
-  padding: 0;            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
 }
-h2{
-    color: #0f766e;
-}
-a{
+
+a {
     color: #2563eb;
     text-decoration: none;
 }
-.penting{
-    background: #fef9c3;
-    font-weight: bold;
+
+a:hover {
+    text-decoration: underline;
 }
-#tentang {
+
+/* ====== KONTEN UTAMA ====== */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #0f766e;
+}
+
+/* ====== SECTION TENTANG ====== */
+#tentang img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#tentang p {
+    text-align: center;
+}
+
+/* ====== SECTION SKILL ====== */
+#skill ul {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid #0f766e;
+    border-radius: 10px;
+    list-style: none;
+    gap: 20px;
+    padding: 12px;
+    margin: 0;
 }
-#skill ul {
-width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;  /* ← ganti dari justify-self */
-  border: 2px solid;
-  border-radius: 10px;
-  list-style: none;
-  gap: 20px;
-  padding: 0;                /* ← ganti dari none */
-  margin: 0 5px;
+
+/* ====== KELAS BANTUAN ====== */
+.penting {
+    background-color: #fef9c3;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* ====== FORM ====== */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    text-align: center;
+    padding: 24px;
 }
