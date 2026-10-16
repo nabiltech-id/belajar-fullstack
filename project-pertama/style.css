@@ -13,7 +13,11 @@ body {
 
 /* ====== HEADER & NAVIGASI ====== */
 header {
-    padding: 32px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -23,8 +27,6 @@ h1 {
 
 nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
     list-style: none;
     padding: 0;
@@ -83,6 +85,12 @@ h2 {
     padding: 12px;
     margin: 0;
 }
+#skill li {
+  background-color: #f0fdfa;
+  border: 1px solid #99f6e4;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
 
 /* ====== KELAS BANTUAN ====== */
 .penting {
@@ -93,6 +101,12 @@ h2 {
 }
 
 /* ====== FORM ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 input, textarea {
     width: 100%;
     padding: 10px;
